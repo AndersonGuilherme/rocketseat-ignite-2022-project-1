@@ -1,11 +1,5 @@
 import style from './Avatar.module.css';
 
-export function Avatar () {
-    return (
-        <img 
-            className={style.avatar}
-            src="https://github.com/AndersonGuilherme.png"
-            alt="" 
-        />
-    )
+export function Avatar({src}) {
+	return <img className={style.avatar} src={src} alt="" />;
 }
